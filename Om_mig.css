@@ -3,7 +3,7 @@ h1 {
     text-align: center ;
     color:black;
     border-style:inset;
-    border-width: 20%;
+    border-width: 10px;
     border-color:#966D33;
 }
 
@@ -11,10 +11,10 @@ h1 {
     background-image: linear-gradient(to bottom, burlywood, #966D33);
 }
 
-.container{
+.img-container{
+    display: flex;
     position: absolute;
     top: 15%;
-    display:flex;
     justify-content: flex-end;
 }
 
@@ -32,6 +32,58 @@ h1 {
     font-size: 140%;
 }
 
+.container{
+    display:flex;
+    flex-direction: row;
+    margin-top: 6%;
+    margin-left: 8%;
+    padding:2%;
+    gap:30%;
+    width:80%;
+    background-image: linear-gradient(to bottom,burlywood, #966D33);
+    border-color: antiquewhite;
+    border-style:solid;
+    color:white;
+    border-radius:5%;
+}
+
+.left-item,.right-item{
+    width:25%;
+    padding:2%;
+    margin:3%;
+    font-size: 120%;
+}
+
+.center-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 26%;
+    padding:2%;
+    width:40%;
+    background-image: linear-gradient(to bottom,burlywood, #966D33);
+    border-color: antiquewhite;
+    border-style:solid;
+    color:white;
+    border-radius:5%;
+}
+
+.Right-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 50%;
+    padding:2%;
+    width:40%;
+    background-image: linear-gradient(to bottom,burlywood, #966D33);
+    border-color: antiquewhite;
+    border-style:solid;
+    color:white;
+    border-radius:5%;
+}
+
 img{
     border-radius: 50%;
     border-style:solid;
@@ -39,6 +91,56 @@ img{
     border-color: #966D33;
     margin:3%;
     padding:2%;
+}
+
+.img-Bror{
+    width: 20%;
+    margin-top:10%;
+    height:auto;
+    margin-right:48%;
+}
+
+
+.img-Kebnekaise{
+ display: flex;
+    position: absolute;
+    top: 15%;
+    justify-content: flex-start;
+}
+.img-Kebnekaise img{
+    display:flex;
+    width: 22%;
+    margin-top:5%;
+    height:auto;
+    margin-left: 73%;
+}
+
+.img-Musik{
+    display: flex;
+    position: absolute;
+    top: 20%;
+    justify-content: flex-start;
+}
+
+.img-Musik img{
+    display:flex;
+    width: 22%;
+    height:auto;
+    margin-left: 10%;
+}
+
+.img-Barn{
+    display: flex;
+    position: absolute;
+    top: 15%;
+    justify-content: flex-start;
+}
+
+.img-Barn img{
+    display:flex;
+    width: 30%;
+    height:auto;
+    margin-left: 10%;
 }
 
 .navbar{
@@ -49,6 +151,7 @@ img{
     border-width: 2%;
     border-color: lightpink;
     opacity:0.9;
+    z-index: 1;
 }
 
 .navbar li {
@@ -64,6 +167,7 @@ img{
 
 .navbar a:hover{
     color:bisque;
+    text-decoration: underline;
 }
 
 .navbar a{
@@ -74,3 +178,10 @@ img{
     text-decoration:none;
 }
 
+body{
+background-image: url(Backgrund.webp);
+background-size: cover;
+background-repeat: no-repeat;
+background-position:center;
+background-attachment:fixed;
+}
